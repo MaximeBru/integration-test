@@ -1,0 +1,93 @@
+<!-- Déclarer le type de document -->
+<!DOCTYPE html>
+<!-- Ouvrir la balise HTML -->
+<html>
+	<!-- Configurer la page dans HEAD -->
+	<head>
+		<!-- Afficher les caractères spéciaux -->
+		<meta charset="UTF-8"/>
+		<title>TP du 06 avril 2016 - Le premier site HTML/CSS</title>
+		<!-- Ajouter la feuille de style CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<!-- Ajouter le contenu de la page dans BODY -->
+	<body>
+
+		<!-- Header avec le logo et la nav -->
+		<header>
+			<img src="img/planet.svg" width="50px" height="50px" alt="Logo du site">
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contacts</a></li>
+				</ul>
+				<!-- Le moteur de recherches -->
+				<form>
+					<input type="text" name="searchBox">
+					<input type="submit" value="" >
+				</form>
+			</nav>
+		</header>
+
+		<!-- Zone principale de la page -->
+		<main>
+			<!-- Section slider -->
+			<section class="whiteBackground">
+				<img src="img/couverture.jpg" alt="Photo de New York" class="totalWidth">
+			</section>
+
+			<!-- Section articles photos -->
+			<section id="sectionPresentation">
+				<article class="whiteBackground">
+					<img src="img/maison.jpg" alt="Photo d'une maison" class="totalWidth">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a href="#">more...</a>
+				</article>
+
+				<article class="whiteBackground">
+					<img src="img/voiture.jpg" alt="Photo d'une voiture" class="totalWidth">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a href="#">more...</a>
+				</article>
+
+				<article class="whiteBackground">
+					<img src="img/cabine.jpg" alt="Photo d'une cabine" class="totalWidth">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a href="#">more...</a>
+				</article>
+
+				<article class="whiteBackground" id="lastArticle">
+					<img src="img/lac.jpg" alt="Photo d'un lac" class="totalWidth">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a href="#">more...</a>
+				</article>
+			</section>
+
+			<!-- Section Bienvenue -->
+			<section class="whiteBackground" id="bienvenue">
+				<!-- 4 photos -->
+				<article>
+					<img src="img/maison.jpg" alt="Photo d'une maison">
+					<img src="img/voiture.jpg" alt="Photo d'une voiture">
+					<img src="img/cabine.jpg" alt="Photo d'une cabine">
+					<img src="img/lac.jpg" alt="Photo d'un lac">
+				</article>
+				<!-- Texte de bienvenue -->
+				<article>
+					<p><strong>Welcome to the site</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</article>
+			</section>
+		</main>
+
+		<!-- Fin de la page -->
+		<footer>
+			<ul>
+				<li><a href="#">Terms of Service</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">&copy; 2009 Designzzz</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>  

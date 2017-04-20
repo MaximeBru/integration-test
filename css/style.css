@@ -1,0 +1,163 @@
+/* Réduire la valeur de base de 1 em/rem à 10px */
+html{
+	font-size: 62.5%;
+}
+
+body {
+	/*Ajouter une couleur de fond*/
+	background-color: #ADA6A0;
+	/*Ajouter de la marge extérieure*/
+	margin: 3rem;
+	/* Augmenter la taille des polices*/
+	font-size: 1.5rem;
+}
+
+/* Limiter la largeur du site à 900px */
+header, main, footer {
+	max-width: 90rem;
+	/* Margin auto permet de centrer une balise de type BLOC dans son parent */
+	margin: auto;
+}
+
+/* Définir la couleur des liens A */
+a {
+	color: #656565;
+}
+
+/* Changer la couleur des balises A quand la sourie est dessus*/
+a:hover {
+	color: black;
+}
+
+/*Supprimer les marges des balises UL*/
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+/* Aligner les balises LI */
+li {
+	display: inline-block;
+}
+
+/* Définir la class totalWidth */
+.totalWidth {
+	width: 100%;
+}
+
+header{
+	/* Pour centrer une balise type inline dasn un parent, utiliser text-align: center */
+	text-align: center;
+}
+
+.whiteBackground, nav, footer {
+	/*Ajouter une couleur de fond*/
+	background-color: white;
+	/* Ajouter une marge intérieure */
+	padding: 2rem;
+	margin-bottom: 2rem;
+
+	/* Ajouter une ombre portée */
+	-moz-box-shadow: 0 0 .5rem #4D4641;
+	-webkit-box-shadow: 0 0 .5rem #4D4641;
+	box-shadow: 0 0 .5rem #4D4641;
+}
+
+nav {
+	/* Ajouter une marge extérieur en haut et en bas */
+	margin: 2rem 0;
+	/* Bloquer les enfants de NAV dans la limite de NAV */
+	position: relative;
+	/* Ferrer le texte à gauche */
+	text-align: left;
+}
+
+form {
+	/* Sortir FROM du flux pour le replacer */
+	position: absolute; /* La position relative de NAV empèche FORM de sortir de NAV */
+	top: 2rem;
+	right: 2rem;
+}
+
+/* Sélectionner une balise grâce à son attribut */
+input[type="submit"]{
+	/* Ajouter une image de fond */
+	background-image: url("../img/loupe.png");
+	/* Ajuster la taille de l'image sur la taille du input */
+	background-size: 100%;
+	/* Ne pas dupliquer l'image de fond */
+	background-repeat: no-repeat;
+
+	/* Supprimer les bordures */
+	border: none;
+	/* Supprimer la couleur de fond */
+	background-color: transparent;
+	/* Augmenter la taille du input */
+	width: 2rem;
+	/* Ajouter une marge à gauche */
+	margin-left: .5rem;
+}
+
+/* Ajouter une marge à droite des LI */
+nav li{
+	margin-right: 2rem;
+}
+
+/* Supprimer le soulignement des balises A de la nav et du footer */
+nav a, footer a{
+	text-decoration: none;
+}
+
+/* Aligner les balises ARTICLE */
+article {
+	display: inline-block;
+	/* Caler les ARTICLE en haut */
+	vertical-align: top;
+	/* Limiter les enfants dasn la taille du parent*/
+	position: relative; 
+}
+
+/* Définir la taille des article de sectionPresentation */
+/* Les sélecteurs par ID commencent par # */
+#sectionPresentation article{
+	width: 19.64%;
+	margin-right: .7rem;
+}
+
+/* Supprimer la marge du dernier ARTICLE */
+#lastArticle {
+	margin-right: 0 !important;
+}
+
+/*  Sélectionner toutes les baliese A des balises ARTICLE */
+article a {
+	/* Sortir les balises A du flux */
+	position: absolute;
+	/* Caler les balies A en bas à droite*/
+	bottom: 1rem;
+	right: 1rem;
+}
+
+#bienvenue article {
+	width: 23%;
+}
+
+#bienvenue img {
+	width: 49%;
+}
+
+/* Sélectionner le dernier type de balise */
+#bienvenue article:last-of-type {
+    width: 74%;
+    padding-left: 2rem;
+}
+
+/* Changer le type de la balise STRONG pour passer à la ligne */
+strong{
+	display: block;
+	margin-bottom: 1rem;
+}
+
+footer {
+	max-width: 86rem;
+}
